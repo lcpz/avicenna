@@ -1,6 +1,7 @@
 <div class="header">
 	<img src={{ "profile.png" | absURL }} class="profile_image">
-	<h1 class="site-title">{{ .Site.Title }}</h1>
+	<h1 class="site-title" style="text-align: center">{{ .Site.Title }}</h1>
+  <br>
 	<div class="site-affilation">
 		<span class="affilation">
 			{{- range $index, $key := .Site.Params.affilation -}}

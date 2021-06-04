@@ -1,6 +1,6 @@
 <div class="introduction">
 	{{- range $index, $key := .Site.Params.Introduction.paragraph -}}
-	<span>
+  <span style="text-align: justify">
 		{{ $key.text  | markdownify }}
 	</span>
 	<br>
