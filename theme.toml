@@ -1,15 +1,15 @@
-name = "Avicenna"
+name = "Avicenna2"
 license = "MIT"
-licenselink = "https://github.com/lcpz/avicenna/blob/master/LICENSE"
+licenselink = "https://github.com/lcpz/avicenna2/blob/master/LICENSE"
 description = "A minimal, simple, and responsive academic page"
-homepage = "https://github.com/lcpz/avicenna"
+homepage = "https://github.com/lcpz/avicenna2"
 tags = ["academic", "personal", "minimal", "minimalist", "clean", "responsive", "simple"]
 features = ["Academic", "Responsive", "Clean And Minimal", "Social Media Links"]
 min_version = "0.41"
 
 [author]
   name = "Luca Capezzuto"
-  homepage = "https://lcpz.gitlab.io""
+  homepage = "https://lcpz.gitlab.io"
 
 [original]
   name = "Hadi Sinaee"
