@@ -1,19 +1,12 @@
-/* Ubuntu, Ubuntu */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: #333;
   line-height: 1.5;
   font-size: 16px;
-}
-
-a,
-a:hover {
-  color: #a00;
-  text-decoration: none;
 }
 
 html,
@@ -79,10 +72,10 @@ span {
     display: block;
 }
 
-a,
-a:hover {
-  color: #a00;
+a:link {
+  color: 4cb8dc;
   text-decoration: none;
+
 }
 
 a:hover {
@@ -95,10 +88,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Ubuntu, raleway, sans-serif;
+  font-family: sans-serif;
   line-height: 1.2;
   color: #330;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 15px;
   margin-top: 20px;
 }
@@ -248,10 +241,9 @@ ul {
 }
 
 .header .site-affilation .email {
-  /* color: #a00; */
   font-size: 14px;
   display: block;
-  font-family: "Ubuntu Mono";
+  font-family: "Fira Mono";
   font-weight: bolder;
 }
 
@@ -259,7 +251,7 @@ ul {
   /* color: #a00; */
   /* font-size: 14px; */
   /* display: block; */
-  font-family: Ubuntu;
+  font-family: Fira;
   /* font-weight: bolder; */
 }
 
@@ -285,7 +277,7 @@ ul {
 }
 
 .page_title {
-  font-family: Ubuntu;
+  font-family: Fira;
   font-weight: bolder;
   font-size: 1.5em;
   margin-top: 10%;
@@ -294,7 +286,7 @@ ul {
 
 .page_meta {
   display: block;
-  font-family: "Ubuntu Mono";
+  font-family: "Fira Mono";
   font-size: 14px;
 }
 
@@ -305,7 +297,7 @@ ul {
 .email {
   /* color: #a00; */
   font-size: 16px;
-  font-family: "Ubuntu Mono";
+  font-family: "Fira Mono";
   font-weight: bolder;
 }
 
@@ -329,13 +321,15 @@ ul {
 }
 
 .code_blog {
-    font-family: "Ubuntu Mono";
+    color: black;
+    font-family: "Fira Mono";
     font-size: 14px;
     margin: 0em .9em 0em;
 }
 
 .blog_cv {
-    font-family: "Ubuntu Mono";
+    color: #d62c2a;
+    font-family: "Fira Mono";
     font-size: 17px;
     /* margin: 0em .9em 0em; */
 }
@@ -403,8 +397,6 @@ ul {
 .tag-cloud a {
   margin-right: 15px;
 }
-
-
 
 @media (max-width: 767px) {
   body {

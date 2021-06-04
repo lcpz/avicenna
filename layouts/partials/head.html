@@ -1,5 +1,5 @@
 <div class="header">
-	<img src={{ "profile.jpg" | absURL }} class="profile_image">
+	<img src={{ "profile.png" | absURL }} class="profile_image">
 	<h1 class="site-title">{{ .Site.Title }}</h1>
 	<div class="site-affilation">
 		<span class="affilation">
@@ -21,8 +21,7 @@
 				{{- range $index, $key := .Site.Params.Social -}}
 				<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
 				{{- end -}}
-				{{ if or (.Site.Params.blog) (.Site.Params.cv_name) }}
-				|
+
 				{{- with .Site.Params.blog -}}
 				<a href="{{ . }}" class="blog_cv">[blog]</a>
 				{{- end -}}
@@ -30,6 +29,9 @@
 				{{ with .Site.Params.cv_name }}
 				<a href="{{ . }}" class="blog_cv">[cv]</a>
 				{{ end }}
+
+				{{ with .Site.Params.scholar }}
+				<a href="{{ . }}" class="blog_cv">[scholar]</a>
 				{{ end }}
 			</ul>
 		</nav>
