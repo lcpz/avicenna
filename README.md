@@ -1,4 +1,4 @@
-# Avicenna2 Theme
+# A2 Hugo Theme
 
 An even more minimal fork of Hadi Sinaee's [Avicenna](https://github.com/hadisinaee/avicenna).
 
