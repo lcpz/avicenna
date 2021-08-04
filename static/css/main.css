@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-weight: 400;
   color: #333;
   line-height: 1.5;
-  font-size: 16px;
 }
 
 html,
@@ -58,7 +58,7 @@ blockquote {
   margin-left: 1rem;
   font-style: italic;
   font-size: 1.4rem;
-  font-family: Georgia, bitstream charter, serif;
+  font-family: "Open Sans";
   border-left: 3px solid;
   border-color: #a00;
   padding-left: 20px;
@@ -88,10 +88,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif;
-  line-height: 1.2;
-  color: #330;
-  font-weight: 300;
+  font-family: "Merriweather";
+  font-weight: lighter;
   margin-bottom: 15px;
   margin-top: 20px;
 }
@@ -241,18 +239,14 @@ ul {
 }
 
 .header .site-affilation .email {
-  font-size: 14px;
+  font-size: 90%;
   display: block;
   font-family: "Fira Mono";
   font-weight: bolder;
 }
 
 .header .site-affilation .position {
-  /* color: #a00; */
-  /* font-size: 14px; */
-  /* display: block; */
-  font-family: Fira;
-  /* font-weight: bolder; */
+  font-family: "Open Sans";
 }
 
 .header .site-affilation nav {
@@ -277,7 +271,7 @@ ul {
 }
 
 .page_title {
-  font-family: Fira;
+  font-family: "Open Sans";
   font-weight: bolder;
   font-size: 1.5em;
   margin-top: 10%;

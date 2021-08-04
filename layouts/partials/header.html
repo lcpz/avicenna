@@ -4,7 +4,7 @@
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 	{{- if .IsHome -}}
-	<title>{{ $siteTitle }} {{- if isset .Site.Params "subtitle" -}} - {{ .Site.Params.Subtitle }}{{- end -}} </title>
+	<title>{{ $siteTitle }} {{- if isset .Site.Params "subtitle" -}} - {{ .Site.Params.Subtitle }}{{- end -}}</title>
 	{{- else -}}
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
@@ -19,12 +19,12 @@
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
-	<link rel="stylesheet" type="text/css" media="screen" href={{ "css/normalize.css" | absURL }} />
+	<link rel="stylesheet" type="text/css" media="screen" href={{ "css/normalize.css" | absURL }}/>
 	<link rel="stylesheet" type="text/css" media="screen" href={{ "css/main.css" | absURL }}/>
 
 	{{ range .Site.Params.custom_css -}}
 	<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
 
-	<script src={{ "js/main.js" | absURL }}></script>
+  <!-- <script src={{ "js/main.js" | absURL }}></script> -->
 </head>

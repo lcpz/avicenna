@@ -13,5 +13,5 @@ min_version = "0.41"
 
 [original]
   name = "Hadi Sinaee"
-  homepage = "http://ce.sharif.edu/~sinaee/"
+  homepage = "https://hadisinaee.github.io"
   repo = "https://github.com/hadisinaee/avicenna"

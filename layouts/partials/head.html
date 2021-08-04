@@ -6,8 +6,8 @@
 		<span class="affilation">
 			{{- range $index, $key := .Site.Params.affilation -}}
 			<ul class="flat">
-				<li class="position">{{$key.position}}, {{$key.name}}</li>
-				<li class="email">{{ $key.contact}}</li>
+				<li class="position">{{ $key.position }}, {{ $key.name }}</li>
+				<li class="email">{{ $key.contact }}</li>
 			</ul>
 			{{- end -}}
 		</span>
