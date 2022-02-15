@@ -14,7 +14,7 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #333;
 }
 
 ::-moz-selection {
@@ -38,6 +38,7 @@ hr {
 
 textarea {
   resize: vertical;
+  margin: 10%;
 }
 
 span {
@@ -91,11 +92,6 @@ h6 {
   font-size: 0.9rem;
 }
 
-.container {
-  max-width: 800px;
-  margin-top: 50px;
-}
-
 ul {
   padding-left: 15px;
 }
@@ -135,26 +131,16 @@ ul {
   display: inline;
 }
 
-.highlight pre {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 20px;
-  background-color: #fafafa !important;
-}
-
-.highlight {
-  background: 0 0;
-}
-
 .wrapper {
-  max-width: 760px;
-  margin: 0 auto;
+  max-width: 60%;
+  margin: auto auto;
 }
 
 .header {
   margin-bottom: 20px;
   /* padding-bottom: 20px; */
 }
+
 .header nav {
   margin-top: 20px;
   /* border-top: 1px solid #f4f4f4; */
