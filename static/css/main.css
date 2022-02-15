@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+/*@import url(https://fonts.googleapis.com/css?family=Fira+Mono);*/
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 body {
@@ -36,46 +36,16 @@ hr {
   padding: 0;
 }
 
-audio,
-canvas,
-img,
-video {
-  width: 100%;
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
 textarea {
   resize: vertical;
 }
 
-blockquote {
-  margin-left: 1rem;
-  font-style: italic;
-  font-size: 1.4rem;
-  font-family: "Open Sans";
-  border-left: 3px solid;
-  border-color: #a00;
-  padding-left: 20px;
-}
-
-blockquote cite {
-  font-size: 70%;
-  opacity: 0.8;
-}
 span {
     display: block;
 }
 
 a:link {
-  color: 4cb8dc;
   text-decoration: none;
-
 }
 
 a:hover {
@@ -122,6 +92,7 @@ h6 {
 
 .container {
   max-width: 800px;
+  margin-top: 50px;
 }
 
 ul {
@@ -179,19 +150,20 @@ ul {
   margin: 0 auto;
 }
 
-.container {
-  margin-top: 50px;
-}
-
 .header {
   margin-bottom: 20px;
   /* padding-bottom: 20px; */
+}
+.header nav {
+  margin-top: 20px;
+  /* border-top: 1px solid #f4f4f4; */
 }
 
 .header .profile_image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   max-width: 30%;
   height: auto;
   border-radius: 50%;
@@ -212,7 +184,6 @@ ul {
 
 .header nav {
   margin-top: 20px;
-  /* border-top: 1px solid #f4f4f4; */
 }
 
 .header nav ul,
@@ -233,103 +204,12 @@ ul {
   text-transform: capitalize;
 }
 
-.header .site-affilation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header .site-affilation .email {
-  font-size: 90%;
-  display: block;
-  font-family: "Fira Mono";
-  font-weight: bolder;
-}
-
-.header .site-affilation .position {
-  font-family: "Open Sans";
-}
-
-.header .site-affilation nav {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.header .site-affilation nav ul svg {
-  max-height: 15px;
-}
-
-/* header for projects */
-.header .logo {
-  display: block;
-  margin-top: 2%;
-  margin-bottom: -2%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 10%;
-  height: auto;
-}
-
 .page_title {
   font-family: "Open Sans";
   font-weight: bolder;
   font-size: 1.5em;
   margin-top: 10%;
   display: block;
-}
-
-.page_meta {
-  display: block;
-  font-family: "Fira Mono";
-  font-size: 14px;
-}
-
-.page_meta_icon {
-  font-weight: .5em;
-}
-
-.email {
-  /* color: #a00; */
-  font-size: 16px;
-  font-family: "Fira Mono";
-  font-weight: bolder;
-}
-
-.collaborators {
-  font-size: 15px;
-  margin-left: .9em;
-  margin-top: .1em;
-}
-
-.year {
-  font-size: 20px;
-  margin-bottom: -.6em;
-}
-
-.project {
-  margin: .5em -.5em 0em;
-}
-
-.publications {
-  margin-left: -.5em;
-}
-
-.code_blog {
-    color: black;
-    font-family: "Fira Mono";
-    font-size: 14px;
-    margin: 0em .9em 0em;
-}
-
-.blog_cv {
-    color: #d62c2a;
-    font-family: "Fira Mono";
-    font-size: 17px;
-    /* margin: 0em .9em 0em; */
-}
-
-.project_description {
- margin: .5em .9em 0em;
 }
 
 .section .section-header {
@@ -341,85 +221,15 @@ ul {
   letter-spacing: 1px;
 }
 
-.recent-posts .posts .introduction {
-  margin-bottom: 30px;
-}
-
-.recent-posts .posts .introduction .meta,
-.introduction .introduction-header .meta,
-.list .posts .introduction .meta {
-  font-size: 0.725rem;
-  color: #999;
-  margin-bottom: 4px;
-}
-
-.introduction .introduction-header {
-  margin-bottom: 30px;
-}
-
-.introduction .introduction-header .title {
-  margin: 0;
-}
-
-.introduction .introduction-header .meta {
-  padding-left: 5px;
-  margin-top: 10px;
-}
-
-.list .posts .introduction .meta {
-  margin-bottom: 0;
-  margin-left: 5px;
+.year {
+  font-size: 20px;
+  margin-bottom: -.6em;
 }
 
 .footer {
   text-align: center;
   font-size: 0.75em;
   color: #999;
-  border-top: 1px solid #f4f4f4;
   padding: 20px 0;
   margin-top: 40px;
-}
-
-.page-title {
-  margin-bottom: 0;
-}
-
-.tag-cloud {
-  margin-top: 20px;
-}
-
-.tag-cloud a {
-  margin-right: 15px;
-}
-
-@media (max-width: 767px) {
-  body {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
-  .container {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
 }

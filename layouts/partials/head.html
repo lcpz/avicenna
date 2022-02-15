@@ -1,48 +1,11 @@
 <div class="header">
 	<img src={{ "profile.png" | absURL }} class="profile_image">
-	<h1 class="site-title" style="text-align: center">{{ .Site.Title }}</h1>
-  <br>
-	<div class="site-affilation">
-		<span class="affilation">
-			{{- range $index, $key := .Site.Params.affilation -}}
-			<ul class="flat">
-				<li class="position">{{ $key.position }}, {{ $key.name }}</li>
-				<li class="email">{{ $key.contact }}</li>
-			</ul>
-			{{- end -}}
-		</span>
-		<!--
-      {{- if isset .Site.Params "subtitle" -}}
-      <h2>{{ .Site.Params.Subtitle | markdownify }}</h2>
-      {{- end -}}
-    -->
-
-		<nav class="nav social">
-			<ul class="flat">
-				{{- range $index, $key := .Site.Params.Social -}}
-				<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
-				{{- end -}}
-
-				{{- with .Site.Params.blog -}}
-				<a href="{{ . }}" class="blog_cv">[blog]</a>
-				{{- end -}}
-
-				{{ with .Site.Params.cv_name }}
-				<a href="{{ . }}" class="blog_cv">[cv]</a>
-				{{ end }}
-
-				{{ with .Site.Params.scholar }}
-				<a href="{{ . }}" class="blog_cv">[scholar]</a>
-				{{ end }}
-			</ul>
-		</nav>
+	<h1 style="text-align: center">{{ .Site.Title }}</h1>
+	<div style="text-align: center">
+    <a href="{{ $.Site.Params.mail }}"><img src="icons/mail.svg" style="max-width: 3.25%; margin-right: 7px" alt="Mail"></a>
+    <a href="{{ $.Site.Params.cv }}"><img src="icons/cv.svg" style="max-width: 3.25%; margin-right: 7px" alt="CV"></a>
+    <a href="{{ $.Site.Params.linkedin }}"><img src="icons/linkedin.svg" style="max-width: 3.25%; margin-right: 7px" alt="LinkedIn"></a>
+    <a href="{{ $.Site.Params.github }}"><img src="icons/github.svg" style="max-width: 3.25%; margin-right: 7px" alt="GitHub"></a>
+    <a href="{{ $.Site.Params.gscholar }}"><img src="icons/gscholar.svg" style="max-width: 3.25%" alt="Google Scholar"></a>
 	</div>
-
-	<nav class="nav">
-		<ul class="flat">
-			{{ range .Site.Menus.main }}
-			<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
 </div>

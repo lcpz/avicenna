@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/lcpz/avicenna2/blob/master/LICENSE"
 description = "A minimal, simple, and responsive academic page"
 homepage = "https://github.com/lcpz/avicenna2"
-tags = ["academic", "personal", "minimal", "minimalist", "clean", "responsive", "simple"]
-features = ["Academic", "Responsive", "Clean And Minimal", "Social Media Links"]
+tags = ["academic", "minimal"]
+features = ["Academic", "Clean And Minimal"]
 min_version = "0.41"
 
 [author]
